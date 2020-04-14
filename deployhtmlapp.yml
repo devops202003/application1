@@ -1,0 +1,10 @@
+---
+-
+  hosts: webServer
+  user: root
+  tasks:
+    - name: "Deploying HTML Application"
+      copy:
+        src: /var/lib/jenkins/workspace/app1-ver-1.1/DevBook-v1.0/index.html
+        dest: /var/www/html/app1/index.html
+...
